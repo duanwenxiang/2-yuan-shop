@@ -1,0 +1,90 @@
+section{
+    // 列表块1
+    .list1{
+        height: 52px;
+        width: 1200px;
+        margin: 0 auto;
+        p{
+            color: #5c626e;
+            line-height: 52px;
+            b{
+                color: #64635e;
+                font-size: 14px;
+            }
+        }
+    }
+    // 列表块2
+    .list2{
+        width: 1200px;
+        height: 226px;
+        border-top: 2px solid #fe0002;
+        border-bottom: 2px solid #fe0002;
+        margin: 0 auto;
+        margin-top:5px;
+        p{
+            font-weight: 600;
+            font-size: 18px;
+            color: #0f050d;
+            float: left;
+            height: 50px;
+            line-height: 50px;
+        }
+        ul{
+            display: inline-block;
+            width: 1000px;
+            margin-top: 10px;
+            height: 70px;
+            li{
+                display: inline-block;
+                padding: 0 15px 0 15px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+            }
+            .list2-com{
+                background:red;
+                color:#ffffff;
+            }
+        }
+    }
+    // 主体
+    .list-c{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top:10px; 
+        height: 2632px;
+        ul{
+            width: 220px;
+            height: 300px;
+            margin: 10px;
+            float: left;
+            img{
+                width: 220px;
+                height: 220px;
+            }
+            li{
+                text-align: center;
+                b{
+                    color:red;
+                    font-size: 16px;
+                    display: inline-block;
+                }
+                a{
+                    display: inline-block;
+                    width: 90px;
+                    height: 23px;
+                    background: #f32242;
+                    color: #ffffff;
+                    line-height: 23px;
+                    margin-left: 20px; 
+                    &:hover{
+                        background:red;
+                    }
+                }
+            }
+            li:nth-of-type(1){
+                margin: 10px 0 20px 0;
+            }
+        }
+    }
+}

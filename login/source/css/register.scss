@@ -1,0 +1,87 @@
+// 注册主体
+section{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    h1{
+        height: 35px;
+        font-size: 24px;
+        line-height: 35px;
+        color: #666666;
+    }
+    // 提交块
+    form{
+        padding-left: 70px;
+        ul{
+            li{
+                height: 40px;
+                line-height: 40px;
+                margin:12px 0;
+                font-size: 14px;
+                p{
+                    float: left;
+                    width: 75px;
+                }
+                input{
+                    display: block;
+                    float: left;
+                    width: 182px;
+                    height: 30px;
+                    border: 1px solid black;
+                    margin-top: 5px
+                }
+                b{
+                    display: block;
+                    float: left;
+                    margin-left: 5px; 
+                }
+                span{
+                    display: block;
+                    float: left;
+                    color: red;
+                    margin-left:5px; 
+                }
+                i{
+                    font-style:normal;
+                    display: block;
+                    float: left;
+                    margin-left:5px; 
+                }
+                a{
+                    display: block;
+                    float: left;
+                    margin-left: 20px;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+            li:nth-of-type(4){
+                input{
+                    width: 392px;
+                }
+            }
+            li:nth-of-type(5){
+                input{
+                    width: 392px;
+                }
+            }
+            li:nth-of-type(8){
+                margin-bottom: 0;
+                padding-left: 75px; 
+                input{
+                    width: 160px;
+                    height: 35px;
+                    background: red;
+                    color: #ffffff;
+                    border: 0px;
+                    margin-top: 2.5px;
+                }
+            }
+            li:nth-of-type(9){
+                margin:0; 
+                padding-left: 75px; 
+            }
+        }
+    }
+}

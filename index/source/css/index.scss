@@ -1,0 +1,285 @@
+section{
+    // 轮播图
+    .slideshow{
+        overflow: hidden;
+        height: 500px;
+        .slides{
+            position: relative;
+            li{
+                width: 100%;
+                height: 500px;
+                position: absolute;
+                float: left;
+            }
+            li:nth-of-type(1){
+                background: url(../img/img1.jpg)no-repeat 50% 0;
+                z-index: 1;
+            }
+            li:nth-of-type(2){
+                background: url(../img/img2.jpg)no-repeat 50% 0;
+                display: none;
+            }
+            li:nth-of-type(3){
+                background: url(../img/img3.jpg)no-repeat 50% 0;
+                display: none;
+            }
+        }
+        .slides-index{
+            position: absolute;
+            z-index: 5;
+            height: 25px;
+            width: 150px;
+            bottom: -60px;
+            left:45%;
+            li{
+                width: 25px;
+                height: 25px;
+                background: #626262;
+                border-radius: 25px;
+                float: left;
+                margin:0 10px; 
+            }
+            li:nth-of-type(1){
+                background: red;
+            }
+        }
+        .tab{
+            width: 170px;
+            height: 500px;
+            position: relative;
+            z-index: 6;
+            background: #c81622;
+            left: 75px;
+            li{
+                font-size: 16px;
+                font-weight: 500;
+                color: #c3c9d7;
+                height: 31px;
+                line-height: 31px;
+                padding-left: 10px;
+                background: url(../img/flbg.gif)no-repeat;
+            }
+            .tab-box{
+                position: absolute;
+                left: 170px;
+                top: 0;
+                height: 500px;
+                width: 300px;
+                background: #ffffff;
+                z-index: 6;
+                display: none;
+                li{
+                    background: #ffffff;
+                    color: black;
+                    width: 150px;
+                    float: left;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    // 促销区
+    .sale{
+        width: 1200px;
+        height: 204px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .leaguer{
+            float: left;
+            width: 170px;
+            height: 204px;
+            border: 1px solid #c81622;
+            p{
+                width: 168px;
+                height: 35px;
+                background: #c81622;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                line-height: 35px;
+                color: #f9e7ff;
+                margin-bottom: 15px;
+            }
+            div{
+                padding-left: 6px;
+                b{
+                    display: inline-block;
+                    line-height: 25px;
+                    width: 45px;
+                    height: 24px;
+                    color: #6f6564;
+                }
+                input{
+                    display: inline-block;
+                    width: 100px;
+                    height: 23px;
+                    margin-bottom: 10px; 
+                }
+            }
+            .Le-login{
+                height: 21px;
+                a{
+                  img{
+                    float: left;
+                    margin-left: 3px;
+                    }
+                }
+                a:nth-of-type(1){
+                    img{
+                        margin-left: 24px;
+                    }
+                }
+            }
+            .qqlogin{
+                margin: 0 auto;
+                margin-top: 16px;
+            }
+        }
+        .hot{
+            width: 1030px;
+            height: 204px;
+            border-right: #cccccc 1px solid;
+            border-bottom: #cccccc 1px solid;
+            border-top: #ca1622 2px solid;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            .hot-font{
+                display: block;
+                position: absolute;
+                width: 120px;
+                height: 30px;
+                line-height: 30px;
+                color: #ffffff;
+                font-size: 16px;
+                background: #ca1622;
+                right: 0;
+                text-align: center;
+                top: 0;
+                z-index: 3;
+            }
+            .hot-slides{
+                width: 1900px;
+                height: 175px;
+                margin-top: 26px;
+                position: absolute;
+                ul{
+                    width: 135px;
+                    height: 167px;
+                    border: solid 1px #f4f4f4;
+                    display: inline-block;
+                    margin: 0 auto;
+                    &:hover{
+                        border-color: blue;
+                    }
+                    img{
+                        width: 120px;
+                        height: 120px;
+                        margin: 5px auto;
+                    }
+                    li{
+                        text-align: center;
+                        color: #5e656d;
+                        b{
+                            color: #fe0007;
+                        }
+                    }
+                    li:nth-of-type(1){
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+    // 商品区
+    .goods{
+        width: 1200px;
+        height: 453px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom:20px;
+        // 商品楼层块
+        .goods-F{
+            width: 170px;
+            height: 453px;
+            float: left;
+            border: solid #b2191b 1px;
+            h1{
+                background:#b2191b;
+                padding-top: 6px;
+                padding-left: 6px;
+            }
+            img:nth-of-type(2){
+                margin-top: 10px;
+            }
+        }
+        // 商品主体块
+        .goods-c{
+            width: 1030px;
+            height: 453px;
+            float: left;
+            border-top: 2px solid #b2181a;
+            border-right: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+            ul{
+                width: 150px;
+                height: 214px;
+                margin: 10px 10px 0 11px;
+                float: left;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+                li{
+                    text-align: center;
+                    color: #6f608b;
+                    b{
+                        display: inline-block;
+                        color: red;
+                        font-size: 14px;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 90px;
+                        height: 23px;
+                        background: #fc2350;
+                        border-radius: 2px;
+                        color: #fffff8;
+                        line-height: 23px;
+                        margin-left: 10px;
+                        &:hover{
+                            background: red;
+                        }
+                    }
+                }
+                li:nth-of-type(1){
+                    margin-top: 10px;
+                    margin-bottom: 12px; 
+                }
+            }
+        }
+    }
+    // 横幅的设置
+    .banner{
+        margin: 0 auto;
+    }
+    // 现场效果
+    .dome{
+        width: 1200px;
+        height: 204px;
+        border: 2px solid #fe0000;
+        margin: 10px auto 20px auto;
+        overflow: hidden;
+        position: relative;
+        div{
+            position: absolute;
+            width: 7200px;
+            img{
+                float: left;
+            }
+        }
+    }
+}

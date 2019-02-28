@@ -1,0 +1,57 @@
+// 侧边栏
+.cide{
+    width: 33px;
+    height: 135px;
+    background: url(../img/green.gif)no-repeat;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 999;
+}
+.serve{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    display: none;
+    z-index: 999;
+    img{
+        float: left;
+    }
+    div{
+        position: absolute;
+        top: 40px;
+        left: 15px;
+        p{
+            height: 80px;
+            img{
+                float: left;
+            }
+            span{
+                display: block;
+                float: left;
+                width: 40px;
+                color: red;
+                margin-left: 10px;
+                margin-top: 15px;
+            }
+        }
+        ul{
+            li{
+                width: 100px;
+                height: 15px;
+                line-height: 15px;
+                margin-top: 8px;
+                background: rgb(182, 101, 8);
+                border-radius: 15px;
+                i{
+                    display: block;
+                    float: left;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../img/icon_off_48261510818266.png)no-repeat;
+                    margin-left: 13px;
+                }
+            }
+        }
+    }
+}
